@@ -1,0 +1,9 @@
+# Virtual environments
+venv/
+
+# Environment variables and secrets
+.env
+
+tree.py
+# Python cache
+__pycache__/
