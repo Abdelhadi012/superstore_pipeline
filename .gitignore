@@ -7,3 +7,10 @@ venv/
 tree.py
 # Python cache
 __pycache__/
+
+test.ipynb
+.vscode/
+
+# Keep the renamed project guide; ignore only its old filename
+superstore_extract_layer_guide.md
+superstore_guide.md
