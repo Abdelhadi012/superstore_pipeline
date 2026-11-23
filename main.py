@@ -1,7 +1,7 @@
 from pathlib import Path
 from src.extract import extract_csv
 from src.transform import transform_data
-from src.load import load_data
+from src.load import load_db, engine_create
 import logging
 
 PROJECT_ROOT = Path(__file__).resolve().parent
@@ -17,10 +17,8 @@ def main():
 
     # Transform
     transformed_df = transform_data(df)
-
-    # Load
-    load_data(transformed_df)
-
+    engine = engine_create()
+    load_db(transformed_df, engine)
 
 if __name__ == "__main__":
     main()
